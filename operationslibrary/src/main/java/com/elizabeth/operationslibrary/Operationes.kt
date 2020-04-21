@@ -1,15 +1,24 @@
 package com.elizabeth.operationslibrary
 
-import android.util.Log
-import android.widget.Button
-import android.widget.EditText
+class Operations {
 
-class Operationes {
+    //Funcion Suma
+    fun sum(a: Int, b: Int): Int {
+        return a + b
 
-fun buttonSum(){
+    }
+    fun subtract(a: Int, b: Int): Int {
+        return a - b
 
-}
+    }
+    fun multiply(a: Int, b: Int): Int {
+        return a * b
 
+    }
+    fun divide(a: Double, b: Double): Double {
+        return a / b
+
+    }
 
 
 }
