@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Calculadora"
         android:textAlignment="center"
-        android:textSize="24dp"
-        android:textColor="#A346BE"/>
+        android:textColor="#A346BE"
+        android:textSize="24dp" />
 
 
     <EditText
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Value 1"
-        android:inputType="numberSigned"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColorHighlight="#9C27B0"
         android:textColorLink="#9C27B0"
@@ -34,52 +34,62 @@
         android:id="@+id/edit_text_val2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned"
         android:hint="Value 2"
+        android:inputType="number"
         android:textAlignment="center"
         android:textSize="18dp" />
 
     <!--Resultado -->
 
-    <EditText
-        android:id="@+id/edit_text_result"
+
+    <TextView
+        android:id="@+id/text_view_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:hint="Result"
-        android:enabled="false"
+        android:text="0"
         android:textAlignment="center"
-        android:textSize="18dp" />
+        android:textSize="70sp" />
 
     <!--Botones de las operaciones-->
 
-    <Button
-        android:id="@+id/button_sum"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:textSize="20dp" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button_subtract"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:textSize="20dp" />
+        <Button
+            android:id="@+id/button_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
 
-    <Button
-        android:id="@+id/button_multiply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="*"
-        android:textSize="20dp" />
+        <Button
+            android:id="@+id/button_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
 
-    <Button
-        android:id="@+id/button_divide"
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="/"
-        android:textSize="20dp" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+    </LinearLayout>
 
 
 </LinearLayout>
